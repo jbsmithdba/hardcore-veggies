@@ -18,11 +18,9 @@ and a [PSD](Leaderboard.psd) to use as a mockup.
 
 You will build a "Hardcore Produce" leaderboard, which is a list of the top five hardcore fruit & veggie names paired with the number of times that they have been mentioned on Twitter or Facebook.
 
-For simplicity's sake, we've stubbed out an API interface within a library (see [api.js](js/api.js)). The library provides a `Poller()` class with a `.poll()` method that allows you to set some options and provide a callback function that will be called when the poller returns data. 
+For simplicity's sake, we've stubbed out an API interface within a library (see [api.js](js/api.js)). The library provides a `Poller()` class with a `.poll()` method. This method will poll for the top names of the type of produce requested in each poll ('fruits' or 'veggies').
 
-Upon each poll, the API will send an array of objects to your callback function. Each object will contain an item name and its associated count, sorted descending by count. As a limitation for this test, each poll will only return the type of produce you request for that poll ('fruits' or 'veggies').
-
-The leaderboard that you build should satisfy these basic requirements:
+Your task is to use the poll method to implement a solution that handles multiple asynchronous responses to build the "Hardcore Produce" leaderboard. The leaderboard that you build should satisfy these basic requirements:
 
 * Visually adhere to the provided [PSD](Leaderboard.psd).
 * Every 15 seconds, update the leaderboard to show the latest produce names and counts, sorted descending by count.
