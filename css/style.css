@@ -1,0 +1,101 @@
+li {
+  list-style-type:none;
+}
+
+.board {
+  background-image: url('../images/diamond.png');
+  background-repeat: repeat;
+  background-size:4% 6%;
+  border: 1px solid black;
+  display: flex;
+  height: auto;
+  width:auto;
+  margin: 5% 30%;
+  -webkit-flex: 1 1 20%;
+  flex: 1 1 20%;  
+}
+
+@media (max-width: 1200px) {
+  .board {
+    background-size:4% 6%;
+    margin: 5% 20%;
+  }
+}
+
+@media (max-width: 800px) {
+  .board {
+    background-size:5% 6%;
+    margin: 5% 10%;
+  }
+}
+
+@media (max-width: 600px) {
+  .board {
+    background-size:5% 6%;
+    margin: 5% 5%;
+  }
+}
+
+@media (max-width: 200px) {
+  .board {
+    background-size:5% 6%;
+    margin: 5% 2%;
+  }
+}
+
+.title {
+  margin: 5% 20% 0px 20%;
+  display: flex;
+  -webkit-flex: 1 1 20%;
+  flex: 1 1 20%;
+  text-align:center;
+  color:lightgray;
+  font-size:300%;
+  text-shadow: 1px 1px 5px black; 
+}
+
+.mentions {
+  background-color:rgba(20,20,20,0.7);
+  border: 3px solid white;
+  border-radius:2em;
+  margin: 0% 20% 10%;
+  display: flex;
+  -webkit-flex: 1 1 20%;
+  flex: 1 1 20%;
+  color: white;
+}
+
+.counts {
+  float:right;
+  color:darkred;
+  margin-left:1em;
+}
+
+.mentionitem {
+  border-top:1px solid gray;
+  padding:1em 2em 0 2em;
+}
+
+.mentions li:first-child .mentionitem {
+  border-top: none;
+}
+
+.mentions li {
+  margin: 10px 0;
+  padding: 4px 0 0 0;
+}
+
+.mentions li div{
+  font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.thin {
+  padding:0 1em;
+  color:white;
+  font-size: 90%;
+  font-family: 'Arial Narrow', Arial, sans-serif;
+  font-weight: 100;
+}
