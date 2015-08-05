@@ -3,16 +3,24 @@ li {
 }
 
 .board {
+  -webkit-flex-direction:column;
+  -ms-flex-direction:column;
+  flex-direction:column;
   background-image: url('../images/diamond.png');
   background-repeat: repeat;
   background-size:4% 6%;
   border: 1px solid black;
-  display: flex;
   height: auto;
   width:auto;
   margin: 5% 30%;
-  -webkit-flex: 1 1 20%;
-  flex: 1 1 20%;  
+  display:-webkit-flex;
+  display:-moz-flex;
+  display:-moz-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;  
 }
 
 @media (max-width: 1200px) {
@@ -45,9 +53,6 @@ li {
 
 .title {
   margin: 5% 20% 0px 20%;
-  display: flex;
-  -webkit-flex: 1 1 20%;
-  flex: 1 1 20%;
   text-align:center;
   color:lightgray;
   font-size:300%;
@@ -59,9 +64,7 @@ li {
   border: 3px solid white;
   border-radius:2em;
   margin: 0% 20% 10%;
-  display: flex;
-  -webkit-flex: 1 1 20%;
-  flex: 1 1 20%;
+  min-width:50%;
   color: white;
 }
 
